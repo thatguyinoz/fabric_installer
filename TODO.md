@@ -6,7 +6,7 @@
 - [x] Create `scripts/` directory structure for versioned scripts
 
 ## Phase 2: Core Installation Functions (Isolated Development)
-- [ ] `temp_check_deps.sh`: System requirements and package dependency checks (curl, git, jq, tar, sudo)
+- [x] `temp_check_deps.sh`: System requirements and package dependency checks (integrated into v0.1.0)
 - [ ] `temp_install_go.sh`: Automated Go toolchain verification and installation
 - [ ] `temp_install_fabric.sh`: Fabric installation routine (`go install github.com/danielmiessler/fabric@latest` or prebuilt releases)
 - [ ] `temp_configure_env.sh`: PATH setup and shell profile persistence (`~/.bashrc`, `~/.zshrc`)
