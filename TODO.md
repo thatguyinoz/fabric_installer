@@ -1,13 +1,13 @@
 # Project Roadmap & TODO
 
 ## Phase 1: Planning & Specifications
-- [ ] Define hardware & VM sizing guidelines (cloud VPS, desktop VM, bare metal, GPU/Ollama considerations)
-- [ ] Draft initial `README.md` structure with requirements and installation guide
-- [ ] Create `scripts/` directory structure for versioned scripts
+- [x] Define hardware & VM sizing guidelines with Debian 13 as primary target (`docs/hardware_specs.md`)
+- [x] Draft initial `README.md` structure with requirements and installation guide
+- [x] Create `scripts/` directory structure for versioned scripts
 
 ## Phase 2: Core Installation Functions (Isolated Development)
-- [ ] `temp_check_deps.sh`: System requirements and package dependency checks (curl, git, jq, etc.)
-- [ ] `temp_install_go.sh`: Automated Go toolchain installation / verification
+- [ ] `temp_check_deps.sh`: System requirements and package dependency checks (curl, git, jq, tar, sudo)
+- [ ] `temp_install_go.sh`: Automated Go toolchain verification and installation
 - [ ] `temp_install_fabric.sh`: Fabric installation routine (`go install github.com/danielmiessler/fabric@latest` or prebuilt releases)
 - [ ] `temp_configure_env.sh`: PATH setup and shell profile persistence (`~/.bashrc`, `~/.zshrc`)
 
