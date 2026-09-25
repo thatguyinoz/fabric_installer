@@ -14,9 +14,10 @@
 - [x] Created `scripts/` directory structure for versioned releases.
 - [x] Populated `README.md` with architecture, sizing summary, and development workflow.
 - [x] Updated `GEMINI.md` with project repository and environment mandates.
+- [x] Established Host Safety Mandate in `GEMINI.md` and `project_workflow.md` (no installations on development machine; all modules must provide `--dry-run` simulation).
 - [x] Developed, tested, and integrated `scripts/fabric-installer-v0.1.0.sh` and root `install.sh` with OS detection and dependency checking.
 
 ## Next Objectives (Phase 2 Continued)
-- Develop `temp_install_go.sh` to verify or install the latest Go runtime (1.22+) required by Fabric.
-- Develop `temp_install_fabric.sh` to install or build Fabric binary.
+- Develop `temp_install_go.sh` to verify or install Go runtime (1.22+) with `--dry-run` simulation mode.
+- Develop `temp_install_fabric.sh` to install Fabric binary with `--dry-run` simulation.
 - Develop `temp_configure_env.sh` to manage environment variables (including `OLLAMA_BASE_URL` for LAN Ollama) and PATH across user shell profiles.
