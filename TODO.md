@@ -10,18 +10,21 @@
 - [x] `temp_check_deps.sh`: System requirements and package dependency checks (integrated into v0.1.0)
 - [x] `temp_install_go.sh`: Automated Go toolchain resolution, verification, and installation with `--dry-run` (integrated into v0.2.0)
 - [x] `temp_install_fabric.sh`: Fabric installation routine (`go install` vs binary release) with `--dry-run` (integrated into v0.3.0)
-- [ ] `temp_configure_env.sh`: PATH setup and shell profile persistence (`~/.bashrc`, `~/.zshrc`)
+- [ ] `temp_configure_env.sh`: PATH setup, persistent shell profiles (`~/.bashrc`, `~/.zshrc`), and `OLLAMA_BASE_URL` (Target: v0.4.0)
 
-## Phase 3: Addons & Configuration
+## Phase 3: Daemons, Svelte Web App & Addons
+- [ ] `temp_install_av_ingest.sh`: Audio/Video ingestion addon (`--av-ingest` for `ffmpeg` + `yt-dlp`) with `--dry-run`
+- [ ] `temp_install_systemd.sh`: Generate and enable background service units (`fabric.service` and `fabric-web.service`)
+- [ ] `temp_install_webgui.sh`: Provision Node.js LTS and build/deploy the official Svelte Web App (Default GUI on port 5173)
+- [ ] Alternatives Announcement: Inform users of Streamlit Python UI, `--serveOllama` drop-in mode, and `--no-gui` flag
 - [ ] `temp_configure_keys.sh`: Interactive API key setup (OpenAI, Anthropic, Groq, LAN Ollama URL)
-- [ ] `temp_install_addons.sh`: Optional dependencies (ffmpeg, yt-dlp) with `--dry-run`
 - [ ] `temp_verify_install.sh`: Health check & pattern synchronization (`fabric --update`)
 
 ## Phase 4: Integration & Local Packaging
 - [x] Assemble version 0.1.0 into `scripts/fabric-installer-v0.1.0.sh` and root `install.sh`
 - [x] Assemble version 0.2.0 into `scripts/fabric-installer-v0.2.0.sh` and root `install.sh`
 - [x] Assemble version 0.3.0 into `scripts/fabric-installer-v0.3.0.sh` and root `install.sh`
-- [ ] Assemble subsequent versions (v0.4.0+) as features are completed
+- [ ] Assemble subsequent versions (v0.4.0, v0.5.0, v0.6.0) as features are completed
 - [ ] Update `README.md` with complete usage guide and single-line curl installation commands
 
 ## Phase 5: Remote Deployment Suite (SSH)
