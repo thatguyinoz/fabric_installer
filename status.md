@@ -9,7 +9,8 @@
 - [x] Converted generic workflow into project-specific `project_workflow.md`.
 - [x] Initialized Git repository and configured local author identity (`thatguyinoz`).
 - [x] Published repository publicly to `https://github.com/thatguyinoz/fabric_installer.git`.
-- [x] Created `docs/hardware_specs.md` with Debian 13 recommendations and 3 sizing tiers.
+- [x] Created `docs/hardware_specs.md` with Debian 13 recommendations and 4 sizing tiers (including LAN-accessible Ollama client VM).
+- [x] Added `Disclaimer.md` and linked footer in `README.md`.
 - [x] Created `scripts/` directory structure for versioned releases.
 - [x] Populated `README.md` with architecture, sizing summary, and development workflow.
 - [x] Updated `GEMINI.md` with project repository and environment mandates.

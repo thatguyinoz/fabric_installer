@@ -21,8 +21,9 @@ This repository provides reproducible automation scripts, environment setup util
 | Deployment Tier | Workload Focus | vCPU | RAM | Storage | Acceleration |
 |---|---|---|---|---|---|
 | **Tier 1: Cloud VPS** | Cloud APIs (OpenAI, Anthropic, Groq, etc.) | 1–2 | 2 GB | 20 GB SSD | None |
-| **Tier 2: Power User / Media** | Cloud APIs + YouTube/audio transcripts (`yt-dlp`, `ffmpeg`) | 2–4 | 4–8 GB | 50 GB SSD | None |
-| **Tier 3: Local LLM Node** | Local inference with Ollama (Llama 3.1, Mistral, Qwen) | 4–8 | 16–32 GB | 100+ GB NVMe | NVIDIA GPU (8GB+ VRAM) or Apple Silicon |
+| **Tier 2: LAN Ollama Client** | Fabric on Debian 13 VM connecting to LAN Ollama | 1–2 | 2–4 GB | 25 GB SSD | None (Remote GPU) |
+| **Tier 3: Power User / Media** | Cloud APIs + YouTube/audio transcripts (`yt-dlp`, `ffmpeg`) | 2–4 | 4–8 GB | 50 GB SSD | None |
+| **Tier 4: Colocated Local Inference** | Local Ollama + Fabric on same host | 4–8 | 16–32 GB | 100+ GB NVMe | NVIDIA GPU (8GB+ VRAM) or Apple Silicon |
 
 > For comprehensive hypervisor settings (Proxmox VE, VMware, KVM, WSL2) and tuning recommendations, refer to [docs/hardware_specs.md](docs/hardware_specs.md).
 
