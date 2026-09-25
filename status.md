@@ -1,8 +1,8 @@
 # Project Status
 
-## Current Status: Phase 2 In Progress - Core Installation Functions
+## Current Status: Phase 2 In Progress - Core Installation Functions (v0.2.0 Released)
 - **Date**: 2026-09-25
-- **Current State**: Initial versioned installer script `scripts/fabric-installer-v0.1.0.sh` created and mirrored to root `install.sh`. Dependency validation module complete.
+- **Current State**: Installer version 0.2.0 released (`scripts/fabric-installer-v0.2.0.sh` and root `install.sh`). Go toolchain resolution, version checking, and full non-mutating `--dry-run` simulation engine implemented.
 
 ## Accomplished
 - [x] Initial workspace discovery and documentation review.
@@ -16,8 +16,8 @@
 - [x] Updated `GEMINI.md` with project repository and environment mandates.
 - [x] Established Host Safety Mandate in `GEMINI.md` and `project_workflow.md` (no installations on development machine; all modules must provide `--dry-run` simulation).
 - [x] Developed, tested, and integrated `scripts/fabric-installer-v0.1.0.sh` and root `install.sh` with OS detection and dependency checking.
+- [x] Developed, tested in isolation, and integrated `scripts/fabric-installer-v0.2.0.sh` and root `install.sh` with Go toolchain verification and `--dry-run` simulation.
 
 ## Next Objectives (Phase 2 Continued)
-- Develop `temp_install_go.sh` to verify or install Go runtime (1.22+) with `--dry-run` simulation mode.
-- Develop `temp_install_fabric.sh` to install Fabric binary with `--dry-run` simulation.
-- Develop `temp_configure_env.sh` to manage environment variables (including `OLLAMA_BASE_URL` for LAN Ollama) and PATH across user shell profiles.
+- Develop `temp_install_fabric.sh` to handle Fabric installation (`go install github.com/danielmiessler/fabric@latest` or precompiled GitHub releases) with `--dry-run` simulation.
+- Develop `temp_configure_env.sh` to configure environment variables (`OLLAMA_BASE_URL` for LAN Ollama) and PATH persistence across `~/.bashrc` and `~/.zshrc`.

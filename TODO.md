@@ -8,7 +8,7 @@
 
 ## Phase 2: Core Installation Functions (Isolated Development with --dry-run)
 - [x] `temp_check_deps.sh`: System requirements and package dependency checks (integrated into v0.1.0)
-- [ ] `temp_install_go.sh`: Automated Go toolchain resolution, verification, and installation with `--dry-run`
+- [x] `temp_install_go.sh`: Automated Go toolchain resolution, verification, and installation with `--dry-run` (integrated into v0.2.0)
 - [ ] `temp_install_fabric.sh`: Fabric installation routine (`go install` vs binary release) with `--dry-run`
 - [ ] `temp_configure_env.sh`: PATH setup and shell profile persistence (`~/.bashrc`, `~/.zshrc`)
 
@@ -19,7 +19,8 @@
 
 ## Phase 4: Integration & Local Packaging
 - [x] Assemble version 0.1.0 into `scripts/fabric-installer-v0.1.0.sh` and root `install.sh`
-- [ ] Assemble subsequent versions (v0.2.0+) as features are completed
+- [x] Assemble version 0.2.0 into `scripts/fabric-installer-v0.2.0.sh` and root `install.sh`
+- [ ] Assemble subsequent versions (v0.3.0+) as features are completed
 - [ ] Update `README.md` with complete usage guide and single-line curl installation commands
 
 ## Phase 5: Remote Deployment Suite (SSH)
