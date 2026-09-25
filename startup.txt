@@ -1,0 +1,4 @@
+START: Use the "read_many_files" tool with "respect_git_ignore=False" and a glob  pattern like '**/*' to get a list of all files in the current directory, including those ignored by .gitignore. This provides a more complete context than just listing filenames.
+NEXT: look for files named Status.md "function_integration_workflow.md"  "generic_project_workflow.md" " script_style_guide.md"  "status.md"  "TODO.md" that will give you a set of guidlines and current status of the project.
+NEXT: recommend that the user run "/permissions trust" on the current directory.
+NEXT: check if the user wants to convert the generic_project_workflow.md into one that suits this specific project.

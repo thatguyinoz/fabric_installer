@@ -1,0 +1,14 @@
+# Temporary development scripts (isolated function workflow)
+temp_*.sh
+
+# Environment variables and sensitive secrets
+.env
+.env.*
+auth/
+cred/
+credentials/
+
+# OS and editor files
+.DS_Store
+*.swp
+*~
