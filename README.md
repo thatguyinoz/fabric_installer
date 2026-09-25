@@ -78,3 +78,10 @@ See [project_workflow.md](project_workflow.md) and [function_integration_workflo
 ## License
 
 This project is licensed under the MIT License.
+
+---
+
+## Disclaimer
+
+> 🛸 **Notice**: This project is an independent community toolkit provided "as-is". Before proceeding, please review our [Disclaimer](Disclaimer.md) for important details regarding API costs, shell execution, and sanity preservation.
+
